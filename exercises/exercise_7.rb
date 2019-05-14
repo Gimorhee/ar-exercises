@@ -13,4 +13,5 @@ puts "----------"
 puts "Enter store name below:"
 @user_store_name = gets.chomp
 
-@user_named_store = Store.create(name: "#{@user_store_name}")
+@user_named_store = Store.create(name: @user_store_name)
+puts @user_named_store.errors.full_messages
