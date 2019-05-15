@@ -14,4 +14,4 @@ puts "----------"
 
 # puts @test_employee
 
-puts @test_employee[:password]
+puts "New generated password: #{@test_employee[:password]}"

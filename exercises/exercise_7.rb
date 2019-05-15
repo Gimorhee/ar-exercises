@@ -9,14 +9,13 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# # Your code goes here ...
-# puts "Enter store name below:"
-# @user_store_name = gets.chomp
+# Your code goes here ...
+puts "Enter store name below:"
+@user_store_name = gets.chomp
 
-# @user_named_store = Store.create(name: @user_store_name, annual_revenue: 30)
+@user_named_store = Store.create(name: @user_store_name, annual_revenue: 50)
 
-# puts @user_named_store.errors.full_messages
+puts @user_named_store.errors.full_messages
 
-@number = (0...8).map { ('a'..'z').to_a[rand(26)] }.join
 
-puts @number
+
